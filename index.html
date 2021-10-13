@@ -9,14 +9,14 @@
 </head>
 <body>
     
-  <header>
-      <div>
+  <header class="header" id="header">
+      <div class="header-up">         <!---- al final no he sabido como aplicar este class ------>
         <div>
           <img class="blackHeart" src="images/black-heart.png" alt="black heart" />
-          <span> Nifty Penguin Magic </span>
+          <span class="header-up-text"> Nifty Penguin Magic </span>
         </div>
         <nav>
-          <ul>
+          <ul class="nav-ul">
             <li><a href="#"> npm Enterprise </a></li>
             <li><a href="#"> Products </a></li>
             <li><a href="#"> Solutions </a></li>
@@ -29,15 +29,21 @@
   
       <div>
         <!-- add logo, search bar and buttons (or links and style them as buttons later) -->
+        <div class="header-down">
+          <img class="npm-logo" src="images/npm-logo.png" alt="npm-logo"><br>
+          <form action="/search" method="get" class="search">
+
+            <div class="form">
+              <img class="magnif" src="images/magnifying-glass.png" alt="magnifying-glass">
+              <input type="text" name="search-query" placeholder="Search packages">
+              
+            </div>
+
+            <input class="button" type="submit" value="Search">
+        
         <div>
-          <img src="images/npm-logo.png" alt="npm-logo"><br>
-          <img src="images/magnifying-glass.png" alt="magnifying-glass">
-          <input type="text" name="search-query" placeholder="Search packages">
-          <input type="submit" value="Search">
-        </div>
-        <div>
-          <a href="#">Join</a>
-          <a href="#">Log in</a>
+          <a class="button-two" href="#">Join</a>
+          <a class="button-three" href="#">Log in</a>
         </div>
       </div>
   </header>
@@ -49,8 +55,8 @@
       Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code.
     </article>
     <div>
-      <a href="#" class="btn-red">See plans</a>
-      <a href="#" class="btn-white">Join for free</a>
+      <a href="#" class="button-red">See plans</a>
+      <a href="#" class="button-white">Join for free</a>
     </div>
   </section>
 
@@ -69,6 +75,7 @@
 
   <!--SECTION 3-->
   <section  id="section-three">
+    <article>
     <div>
       <img src="images/zero-configuration.svg" alt="zero-configuration"/>
       <h4>Zero configuration</h4>
@@ -92,10 +99,11 @@
       <h4>npm audit</h4>
       <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
     </div>
-
-    <a href="#" class="btn-org">Create an Org</a>
+  </article>
     
   </section>
+
+  <a href="#" class="button-black">Create an Org</a>
 
 </body>
 </html>
