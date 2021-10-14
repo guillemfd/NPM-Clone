@@ -9,44 +9,44 @@
 </head>
 <body>
     
-  <header class="header" id="header">
-      <div class="header-up">         <!---- al final no he sabido como aplicar este class ------>
-        <div>
-          <img class="blackHeart" src="images/black-heart.png" alt="black heart" />
-          <span class="header-up-text"> Nifty Penguin Magic </span>
-        </div>
-        <nav>
-          <ul class="nav-ul">
-            <li><a href="#"> npm Enterprise </a></li>
-            <li><a href="#"> Products </a></li>
-            <li><a href="#"> Solutions </a></li>
-            <li><a href="#"> Resources </a></li>
-            <li><a href="#"> Docs </a></li>
-            <li><a href="#"> Support </a></li>
-          </ul>
-        </nav>
-      </div>
-  
+  <header>
+    <div>
       <div>
-        <!-- add logo, search bar and buttons (or links and style them as buttons later) -->
-        <div class="header-down">
-          <img class="npm-logo" src="images/npm-logo.png" alt="npm-logo"><br>
-          <form action="/search" method="get" class="search">
-
-            <div class="form">
-              <img class="magnif" src="images/magnifying-glass.png" alt="magnifying-glass">
-              <input type="text" name="search-query" placeholder="Search packages">
-              
-            </div>
-
-            <input class="button" type="submit" value="Search">
-        
-        <div>
-          <a class="button-two" href="#">Join</a>
-          <a class="button-three" href="#">Log in</a>
-        </div>
+        <img class="blackHeart" src="images/black-heart.png" alt="black heart" />
+        <span> Nifty Penguin Magic </span>
       </div>
-  </header>
+      <nav>
+        <ul>
+          <li><a href="#"> npm Enterprise </a></li>
+          <li><a href="#"> Products </a></li>
+          <li><a href="#"> Solutions </a></li>
+          <li><a href="#"> Resources </a></li>
+          <li><a href="#"> Docs </a></li>
+          <li><a href="#"> Support </a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="headerBottom">
+      <!-- add logo, search bar and buttons (or links and style them as buttons later) -->
+      <div>
+        <img src="images/npm-logo.png" alt="npm-logo" class="logo">
+      
+        <form action="/search" method="GET" class="search-form">
+          <div class="barra">
+            <img src="images/magnifying-glass.png" alt="magnifying-glass">
+            <input type="text" name="search-query" placeholder="Search packages">
+          </div>
+          <button type="submit">Search</button>
+        </form>
+      </div>  
+
+      <div>
+        <a class="button-two" href="#">Join</a>
+        <a class="button-three" href="#">Log in</a>
+      </div>
+    </div>
+</header>
 
   <!--SECTION 1-->
   <section id="section-one">
